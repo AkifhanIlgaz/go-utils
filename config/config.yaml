@@ -1,0 +1,10 @@
+token:
+  private_key_path: "private_key.pem"
+  public_key_path: "public_key.pem"
+  access_token_expires_in: 15 # minutes
+  refresh_token_expires_in: 7 # days
+redis:
+  connection_string: "<redis connection string>"
+mongo:
+  connection_string: "<mongo connection string>"
+port: 8080
