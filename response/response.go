@@ -43,7 +43,7 @@ func Success(message string, opts ...Option) APIResponse {
 
 func Error(code int, message string, opts ...Option) APIResponse {
 	res := APIResponse{
-		Success:   true,
+		Success:   false,
 		Message:   message,
 		Timestamp: time.Now(),
 		Error: &APIError{
